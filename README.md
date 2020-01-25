@@ -1,2 +1,2 @@
 # GIT-GITHUB
-this is repository
+This is a repository
