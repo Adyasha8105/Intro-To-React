@@ -1,0 +1,107 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #121212;;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  min-height: 100vh;
+}
+
+h1 {
+  color: rgb(245, 90, 43);
+  font-size: 4em;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 0.35em;
+  margin-top: 0;
+}
+
+a {
+  color: rgb(245, 90, 43);
+}
+
+.page-content {
+  flex: 1;
+}
+
+.container {
+  background: #272727;
+}
+
+.container__footer {
+  text-align: center;
+}
+
+.todo__item {
+  cursor: pointer;
+  padding: 1rem;
+  background: #fff;
+  position: relative;
+  display: flex;
+}
+
+.todo__item + .todo__item {
+  margin-top: 1rem;
+}
+
+[data-status="complete"] {
+  text-decoration: line-through;
+  font-style: italic;
+  color: rgb(245, 90, 43) !important;
+}
+
+.todo-input {
+  border: 1px solid #fff;
+}
+
+.btn {
+  border: none;
+  padding: 0.5rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn--submit {
+  background: rgb(245, 90, 43);
+}
+
+.btn--icon {
+  padding: 0;
+  background: transparent;
+}
+
+.todo__text {
+  flex: auto;
+  color: #000;
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -.1em;
+}
+
+.icon--remove {
+  background-image: url("../img/close.svg");
+}
+
+.page-footer {
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+}
+
+.page-footer a {
+  color: rgb(245, 90, 43);
+}
