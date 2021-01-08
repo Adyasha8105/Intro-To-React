@@ -1,0 +1,31 @@
+.Person {
+    width:60%;
+    margin:16px auto;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    padding: 16px;
+    text-align: center;
+}
+
+.Person h1{
+    font-size: 20px;
+}
+
+.Button{
+background-color: green;
+font: inherit;
+border: 2px solid black;
+padding: 8px;
+cursor: pointer;
+}
+
+.Button:hover {
+  background-color: lightgreen;
+  color: black;
+}
+
+@media (min-width: 500px) {
+    .Person {
+        width: 450px;
+    }
+}
