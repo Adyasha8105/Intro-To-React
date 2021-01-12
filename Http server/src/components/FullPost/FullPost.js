@@ -21,7 +21,7 @@ class FullPost extends Component {
  deletePostHandler= () => {
      axios.delete('/posts/' + this.props.id)
      .then(response => {
-        this.setState({loadedPost: response.data});
+        console.log(response);
     });
  }
     render () {
@@ -30,6 +30,7 @@ class FullPost extends Component {
             post= <p style={{textAlign: 'center'}}>Loading...</p>;
         }
         if(this.state.loadedPost){
+            debugger;
         post = (
             <div className="FullPost">
                 <h1>{this.state.loadedPost.title}</h1>

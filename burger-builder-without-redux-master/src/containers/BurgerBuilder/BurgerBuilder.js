@@ -28,7 +28,7 @@ class BurgerBuilder extends Component {
 	componentDidMount() {
 		axios
 			.get(
-				"https://react-cyber-burger-app.firebaseio.com/ingredients.json"
+				"https://burger-builder-21745-default-rtdb.firebaseio.com/ingredients.json"
 			)
 			.then(res => {
 				this.setState({ ingredients: res.data });
@@ -94,7 +94,7 @@ class BurgerBuilder extends Component {
 	};
 
 	continuePurchaseHandler = () => {
-		const queryParams = [];
+		const queryParams = []; 
 		for (let i in this.state.ingredients) {
 			queryParams.push(
 				encodeURIComponent(i) +
